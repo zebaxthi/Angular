@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "firestore-grafica-320b2": {
+      "hosting": {
+        "goty": [
+          "firestore-grafica-320b2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "firestore-grafica-320b2"
+  }
+}

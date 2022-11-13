@@ -1,0 +1,34 @@
+{
+  "usuarios": [
+    {
+      "name": "Esteban",
+      "age": 40,
+      "email": "esteban@email.com",
+      "id": 1572300257635
+    },
+    {
+      "name": "Sebastian",
+      "age": 20,
+      "email": "sebastian@email.com",
+      "id": 1640100817533
+    },
+    {
+      "name": "Carmen",
+      "age": 50,
+      "email": "carmen@email.com",
+      "id": 1640102184175
+    },
+    {
+      "name": "Gloria",
+      "age": 32,
+      "email": "gloria@email.com",
+      "id": 1640103736987
+    },
+    {
+      "name": "Roberto",
+      "age": 23,
+      "email": "roberto@email.com",
+      "id": 1640104647480
+    }
+  ]
+}

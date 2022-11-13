@@ -1,0 +1,54 @@
+<h1>Héroe <small>Nombre del Héroe</small></h1>
+<hr>
+
+<div class="row text-end">
+    <div class="col">
+        <button routerLink="/heroes" class="btn btn-outline-danger" type="button">
+            <i class="fa fa-arrow-left">Regresar</i>
+        </button>
+    </div>
+</div>
+
+<div class="row animate__animated animate__fadeInLeftBig">
+    <div class="col">
+        <form (ngSubmit)="Guardar( f )" #f="ngForm">
+
+            <div class="form-group">
+                <label>Firebase ID</label>
+                <input type="text" class="form-control" placeholder="Firabase ID" [(ngModel)]="heroe.id" name="id" disabled="disabled">
+                <small class="form-text text-muted">Este campo es autogenerado</small>
+            </div>
+
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre del Héroe" [(ngModel)]="heroe.nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label>Poder</label>
+                <input type="text" class="form-control" placeholder="Poder del Héroe" [(ngModel)]="heroe.poder" name="poder">
+            </div>
+
+            <div class="form-group">
+                <label>Estado</label>
+                <br>
+                <button *ngIf="heroe.vivo" (click)="heroe.vivo = false" class="btn btn-outline-success w-50" type="button">
+                    <i class="fa fa-smile-wink">Vivo</i>
+                </button>
+                <button *ngIf="!heroe.vivo" (click)="heroe.vivo = true" class="btn btn-outline-danger w-50" type="button">
+                    <i class="fa fa-dizzy">Muerto</i>
+                </button>
+            </div>
+
+            <hr>
+
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-outline-primary w25">
+                    <i class="fa fa-save">Guardar</i>
+                </button>
+            </div>
+
+
+        </form>
+    </div>
+</div>

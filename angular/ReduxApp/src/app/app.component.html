@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <button class="btn btn-primary" (click)="spanishMensaje()">Cambiar a Spanish</button>
+            <button class="btn btn-success" (click)="EnglishMensaje()">Cambiar a English</button>
+        </div>
+        <div class="card-body">
+            <p>{{ (dato$ | async)?.texto }}</p>
+        </div>
+    </div>
+</div>

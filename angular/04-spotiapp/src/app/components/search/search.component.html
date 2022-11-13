@@ -1,0 +1,7 @@
+<div class="row">
+    <div class="col">
+        <input #termino type="text" (keyup)="buscar(termino.value)" class="from-control" placeholder="Buscar Artista">
+    </div>
+</div>
+<app-loading *ngIf="loading" class="m-5"></app-loading>
+<app-targetas *ngIf="!loading" [items]="artists"></app-targetas>
